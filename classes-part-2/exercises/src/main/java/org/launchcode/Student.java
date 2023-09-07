@@ -56,9 +56,14 @@ public class Student {
 
     // TODO: Add your custom 'toString' method here. Make sure it returns a well-formatted String rather
     //  than just the class fields.
+    public String toString(){
+        return this.name + " is a " + this.getGradeLevel(this.numberOfCredits) + " with " + this.getNumberOfCredits() +
+                " credits and a GPA of " + this.getGpa()+".";
+    }
 
     // TODO: Add your custom 'equals' method here. Consider which fields should match in order to call two
     //  Student objects equal.
+
 
     public String getName() {
         return name;
