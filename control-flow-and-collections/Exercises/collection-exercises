@@ -1,0 +1,6 @@
+package org.launchcode;
+
+int[] integerArray = {1, 1, 2, 3, 5, 8};
+for (i=0; i< integerArray.size; i++) {
+    sout
+

@@ -1,2 +1,5 @@
-package Technology;public class Computer {
+package Technology;
+
+public class Computer {
+    
 }

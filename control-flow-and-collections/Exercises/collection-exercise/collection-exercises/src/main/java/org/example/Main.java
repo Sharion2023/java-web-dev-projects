@@ -1,5 +1,5 @@
 package org.example;
-import org.w3c.dom.ls.LSOutput;
+
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -9,17 +9,6 @@ import java.util.Arrays;
 public class Main {
 
     //create static method to find sum of arrayList
-    public static int findSum (ArrayList<Integer> arr){
-        int sum = 0;
-        for(int integer : arr) {
-            if(integer%2 == 0) {
-                sum += integer;
-            }
-        }
-        System.out.print(sum);
-
-        return sum;
-    }
 
     public static void main(String[] args) {
         int[] integerArray = {1, 1, 2, 3, 5, 8};
@@ -30,12 +19,36 @@ public class Main {
 
         String drSeuss = "I would not, could not, in a box. I would not, could not with a fox. " +
                 "I will not eat them in a house. I will not eat them with a mouse.";
-        String[] words = drSeuss.split(" ");
+        String[] phrase = drSeuss.split(" ");
 
-           System.out.println(Arrays.toString(words));
+           System.out.println(Arrays.toString(phrase));
         String[] sentences = drSeuss.split("\\.") ;
 
-        //create an Arraylist
+
+
+
+        //call method created for even sum
+
+
+            ArrayList<String> words = new ArrayList<>();
+            words.add("Banana");
+            words.add("apple");
+            words.add("pear");
+            words.add("peach");
+
+
+            for(String word: words) {
+            if(word.length() == 5) {
+                System.out.println(word);
+            }
+            }
+            //wordSearch(words);
+
+
+
+
+    }
+    public static int main (ArrayList<Integer> arr){
         ArrayList<Integer> myList= new ArrayList<>();
         myList.add(20);
         myList.add(15);
@@ -48,12 +61,17 @@ public class Main {
         myList.add(93);
         myList.add(70);
 
-
-        //call method created for even sum
-        findSum(myList);
-
+        int sum = 0;
+        for(int integer : arr) {
+            if(integer%2 == 0) {
+                sum += integer;
+            }
+        }
+        System.out.print(sum);
+        return sum;
     }
 
+    //create an Arraylist
 
 
 

@@ -1,2 +1,4 @@
-package Technology;public class Laptop {
+package Technology;
+
+public class Laptop extends Computer {
 }
